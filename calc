@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+char operator;
+int firstnumber,secondnumber;
+printf("Enter an operator (+,-,*,):");
+scanf("%c",&operator);
+printf("Enter two operands:");
+scanf("%d %d",&firstnumber,&secondnumber);
+switch(operator)
+{
+case '+':
+
+	printf("%d+%d=%d",firstnumber,secondnumber,firstnumber+secondnumber);
+	break;
+case '-':
+	printf("%d-%d=%d",firstnumber,secondnumber,firstnumber-secondnumber);
+	break;
+case '*':
+	printf("%d*%d=%d",firstnumber,secondnumber,firstnumber*secondnumber);
+	break;
+default:
+	printf("Error! operator is not correct");
+
+	 }
+	      getch();
+	return 0;
+}
